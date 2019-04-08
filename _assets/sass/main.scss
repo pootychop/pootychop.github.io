@@ -1,0 +1,324 @@
+
+//colors
+$white_90: rgba(255,255,255,0.9);
+$black: #000;
+$color_pastel_green_approx: #76e598;
+$white: #fff;
+$pink: pink;
+$color_tuatara_85_approx: rgba(52, 52, 52, 0.85);
+$color_salem_approx: #047951;
+
+//fonts
+$font_0: Montserrat;
+$font_1: sans-serif;
+$font_2: Flamenco;
+$font_3: cursive;
+
+//urls
+$url_0: url(../img/blobby1-test.svg);
+$url_1: url(#clip1-a);
+$url_2: url(#clip2-a);
+$url_3: url(../img/puppy.jpg);
+$url_4: url(https://i1.wp.com/media.boingboing.net/wp-content/uploads/2018/03/Ossi-Saarinen-01.jpg);
+$url_5: url(https://media.mnn.com/assets/images/2018/07/cat_eating_fancy_ice_cream.jpg.838x0_q80.jpg);
+$url_6: url(../img/blob-green.svg);
+
+//@extend-elements
+//original selectors
+//h1, h2, h3, h4, h5, h6, p, a, svg
+%extend_1 {
+  line-height: 1.4em;
+  color: $black;
+  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: color 250ms ease-in-out;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $font_0, $font_1;
+}
+button {
+  font-family: $font_0, $font_1;
+}
+nav {
+  text-align: right;
+  z-index: 30;
+  position: fixed;
+  padding: 2vw;
+  top: 0;
+  right: 0;
+  background-color: $white_90;
+}
+h1 {
+  @extend %extend_1;
+  font-family: $font_2, $font_3;
+  font-size: 6em;
+  //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  text-shadow: -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black;
+}
+h2 {
+  @extend %extend_1;
+  font-size: 1.6em;
+}
+h3 {
+  @extend %extend_1;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding-bottom: 0.8em;
+}
+h4 {
+  @extend %extend_1;
+}
+h5 {
+  @extend %extend_1;
+}
+h6 {
+  @extend %extend_1;
+}
+p {
+  @extend %extend_1;
+  line-height: 2em;
+  padding-bottom: 0.8em;
+}
+a {
+  @extend %extend_1;
+  &:hover {
+    color: $color_pastel_green_approx;
+  }
+}
+svg {
+  @extend %extend_1;
+}
+header {
+  padding-top: 16vh;
+  background: $url_0no-repeat top 90% left -60%;
+  background-size: 80%;
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  padding: 4vw;
+  width: 100vw;
+  max-width: 1608px;
+  align-items: stretch;
+  line-height: 0;
+}
+.forth {
+  margin: 0;
+  width: 92vw;
+}
+.third {
+  margin: 0;
+  width: 92vw;
+}
+.half {
+  margin: 0;
+  width: 92vw;
+}
+.full {
+  margin: 0;
+  width: 92vw;
+}
+.item {
+  text-align: center;
+  align-items: center;
+  background-color: $pink;
+  &.forth {
+    height: 92vw;
+  }
+  &.third {
+    height: 92vw;
+  }
+  &.half {
+    height: 92vw;
+  }
+}
+.blob {
+  position: absolute;
+  z-index: -10;
+  top: -180px;
+  left: -40%;
+}
+#blob {
+  position: absolute;
+  height: 600px;
+  width: 80%;
+}
+#filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.btn {
+  background: $white;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 3px;
+  border: 2px solid $black;
+  padding: 0.4em;
+  font-size: .6em;
+  text-transform: uppercase;
+  margin: .2em;
+  flex-grow: 1;
+  text-align: center;
+  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: border 250ms ease-in-out;
+  &:hover {
+    border: 2px solid $color_pastel_green_approx;
+  }
+  &:focus {
+    border: 2px solid $color_pastel_green_approx;
+  }
+}
+.scale-anm {
+  //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+  transform: scale(1);
+}
+.item-content {
+  padding: 20%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  color: $white;
+  opacity: 0;
+  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: opacity 450ms ease-in-out, transform 200ms ease;
+  * {
+    width: 100%;
+  }
+  &:hover {
+    opacity: 1;
+    background-color: $color_tuatara_85_approx;
+  }
+}
+.clip1 {
+  clip-path: $url_1;
+  &:hover {
+  }
+}
+.clip2 {
+  clip-path: $url_2;
+  &:hover {
+  }
+}
+#puppy {
+  background: $url_3no-repeat center;
+  background-size: cover;
+}
+#bird {
+  background: $url_4 no-repeat center;
+  background-size: cover;
+}
+#cat {
+  background: $url_5 no-repeat center;
+  background-size: cover;
+}
+#about {
+  background: $url_6 no-repeat right -10% bottom -10%;
+  .container {
+    padding-bottom: 0;
+  }
+}
+#self {
+  width: 100%;
+}
+.contact-info {
+  text-align: center;
+  padding: 4vw 0;
+  ul li {
+    width: 34px;
+    margin: 8px;
+    opacity: 1;
+    display: inline-block;
+    a svg {
+      //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+      transition: fill 250ms ease-in-out;
+      &:hover {
+        fill: $color_salem_approx;
+      }
+    }
+  }
+  a:hover {
+    color: $color_salem_approx;
+  }
+}
+#contact {
+  background-color: $color_pastel_green_approx;
+}
+@media only screen and(min-width: 560px) {
+  .forth {
+    width: calc(92vw / 2);
+  }
+  .third {
+    width: calc(92vw / 2);
+  }
+  .half {
+    width: calc(92vw / 2);
+  }
+  .item {
+    &.forth {
+      height: calc(92vw / 2);
+    }
+    &.third {
+      height: calc(92vw / 2);
+    }
+    &.half {
+      height: calc(92vw / 2);
+    }
+  }
+  .btn {
+    padding: 0.5em;
+    font-size: .8em;
+    margin: .3em;
+  }
+}
+@media only screen and(min-width: 740px) {
+  h1 {
+    font-size: 10em;
+  }
+  h2 {
+    font-size: 2.0em;
+  }
+  h3 {
+    font-size: 1.4em;
+  }
+  header {
+    padding-top: 33vh;
+  }
+  .forth {
+    width: calc(92vw / 3);
+    max-width: calc(536px - 2vw);
+  }
+  .third {
+    width: calc(92vw / 3);
+    max-width: calc(536px - 2vw);
+  }
+  .item {
+    &.forth {
+      height: calc(92vw / 3);
+      max-height: calc(536px - 2vw);
+    }
+    &.third {
+      height: calc(92vw / 3);
+      max-height: calc(536px - 2vw);
+    }
+  }
+}
+@media only screen and(min-width: 1200px) {
+  .forth {
+    width: calc(92vw / 4);
+    max-width: calc(402px - 2vw);
+  }
+  .half {
+    max-width: calc(804px - 4vw);
+  }
+  .item.forth {
+    height: calc(92vw / 4);
+    max-height: calc(402px - 2vw);
+  }
+}
