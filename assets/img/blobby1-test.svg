@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 668 668" style="enable-background:new 0 0 668 554;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+</style>
+<title>blobbyArtboard 1</title>
+<linearGradient id="a" x1="118.36" y1="586.38" x2="118.73" y2="587.07" gradientTransform="matrix(911, 0, 0, -764, -107623, 448599.96)" gradientUnits="userSpaceOnUse">
+  <stop offset="0" stop-color="#ffad76"/>
+  <stop offset="0.7" stop-color="#ff5db6"/>
+  <stop offset="1" stop-color="#f0f"/>
+  <stop offset="1" stop-color="#ef10ff"/>
+</linearGradient>
+<path fill="url(#a)">
+  <animate
+  attributeName="d"
+    dur="10s"
+    repeatCount="indefinite"
+    keyTimes="0;
+              0.33;
+              0.66;
+              1"
+    calcMode="spline"
+    keySplines="0,0,1,1;
+                .42,0,.58,1;
+                .42,0,.58,1"
+    values="M447.3,107.8c-80.9,0-250.5-47.3-284.9,12.5s-205,158.6-131.6,309.9S179.3,606.8,247,624.8 s358.5-85.9,386.8-109.6s28.3-194.9-9.2-253S528.2,107.8,447.3,107.8z;
+          M453,76c-80.9,0-314.6-14.8-349,45S-42.6,278.9,30.8,430.2S179.3,606.8,247,624.8s314.7-64.1,343-87.8 s77.5-229.9,40-288S533.9,76,453,76z;
+          M401,65c-80.9,0-275.6,32.2-310,92S0.6,270.7,74,422s105.3,184.8,173,202.8s291.7,33.9,320,10.2 s101.5-351.9,64-410S481.9,65,401,65z;
+            M447.3,107.8c-80.9,0-250.5-47.3-284.9,12.5s-205,158.6-131.6,309.9S179.3,606.8,247,624.8 s358.5-85.9,386.8-109.6s28.3-194.9-9.2-253S528.2,107.8,447.3,107.8z"/>
+  </path>
+</svg>
