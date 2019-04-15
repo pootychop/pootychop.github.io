@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+     <link rel="stylesheet" href="/assets/css/styles.css">
+     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  </head>
+  <body>
+
+    {% include nav.html %}
+
+    <section class="container">
+        <div class="third">
+          <h2>{{ page.project_title }}</h2>
+
+          {{content}}
+
+        </div>
+        <div class="two-thirds">
+          <img src=" /assets/img/{{ page.image1 }} "/>
+          <img src=" /assets/img/{{ page.image2 }} "/>
+          <img src=" /assets/img/{{ page.image3 }} "/>
+        </div>
+    </section>
+
+    {% include contact-footer.html %}
+
+  </body>
+</html>

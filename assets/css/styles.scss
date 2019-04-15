@@ -93,6 +93,9 @@ a {
 svg {
   @extend %extend_1;
 }
+img {
+  width: 100%;
+}
 header {
   padding-top: 16vh;
   background: $url_0 no-repeat top 90% left -60%;
@@ -113,6 +116,10 @@ header {
   width: 92vw;
 }
 .third {
+  margin: 0;
+  width: 92vw;
+}
+.two-thirds {
   margin: 0;
   width: 92vw;
 }
@@ -252,13 +259,7 @@ header {
   background-color: $color_pastel_green_approx;
 }
 @media only screen and(min-width: 560px) {
-  .forth {
-    width: calc(92vw / 2);
-  }
-  .third {
-    width: calc(92vw / 2);
-  }
-  .half {
+  .forth, .third, .half, .two-thirds {
     width: calc(92vw / 2);
   }
   .item {
@@ -278,6 +279,8 @@ header {
     margin: .3em;
   }
 }
+
+
 @media only screen and(min-width: 740px) {
   h1 {
     font-size: 10em;
@@ -298,6 +301,10 @@ header {
   .third {
     width: calc(92vw / 3);
     max-width: calc(536px - 2vw);
+  }
+  .two-thirds {
+    width: calc(92vw / 3 * 2);
+    max-width: calc(1072px - 2vw);
   }
   .item {
     &.forth {
