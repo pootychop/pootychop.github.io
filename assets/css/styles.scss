@@ -1,5 +1,7 @@
 ---
 ---
+@import "normalize";
+@import "previews";
 
 //colors
 $white_90: rgba(255,255,255,0.9);
@@ -18,11 +20,6 @@ $font_3: cursive;
 
 //urls
 $url_pink-blob: url(../img/blobby-pink.svg);
-$url_1: url(#clip1-a);
-$url_2: url(#clip2-a);
-$url_3: url(../img/puppy.jpg);
-$url_4: url(https://i1.wp.com/media.boingboing.net/wp-content/uploads/2018/03/Ossi-Saarinen-01.jpg);
-$url_5: url(https://media.mnn.com/assets/images/2018/07/cat_eating_fancy_ice_cream.jpg.838x0_q80.jpg);
 $url_6: url(../img/blob-green.svg);
 
 //@extend-elements
@@ -206,27 +203,17 @@ header {
   }
 }
 .clip1 {
-  clip-path: $url_1;
+  clip-path: $url_clip1;
   &:hover {
   }
 }
 .clip2 {
-  clip-path: $url_2;
+  clip-path: $url_clip2;
   &:hover {
   }
 }
-#puppy {
-  background: $url_3 no-repeat center;
-  background-size: cover;
-}
-#bird {
-  background: $url_4 no-repeat center;
-  background-size: cover;
-}
-#cat {
-  background: $url_5 no-repeat center;
-  background-size: cover;
-}
+
+
 #about {
   background: $url_6 no-repeat right -10% bottom -10%;
   .container {
