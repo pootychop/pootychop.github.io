@@ -305,4 +305,12 @@ header {
     height: calc(92vw / 4);
     max-height: calc(402px - 2vw);
   }
+  .third {
+    width: calc(92vw / 3);
+    max-width: calc(536px - 4vw);
+  }
+  .two-thirds {
+    width: calc(92vw / 3 * 2);
+    max-width: calc(1072px - 4vw);
+  }
 }
