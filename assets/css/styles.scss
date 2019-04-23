@@ -201,17 +201,6 @@ header {
     background-color: $color_tuatara_85_approx;
   }
 }
-.clip1 {
-  clip-path: $url_clip1;
-  &:hover {
-  }
-}
-.clip2 {
-  clip-path: $url_clip2;
-  &:hover {
-  }
-}
-
 
 #about {
   background: $url_6 no-repeat right -10% bottom -10%;

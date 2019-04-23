@@ -1,8 +1,23 @@
 $url_clip1: url(#clip1-a);
 $url_clip2: url(#clip2-a);
+$url_clip3: url(#clip3-a);
 $url_sp: url(../img/sexypizza/sexy-pizza-kiss.jpg);
 $url_4: url(https://i1.wp.com/media.boingboing.net/wp-content/uploads/2018/03/Ossi-Saarinen-01.jpg);
 $url_5: url(https://media.mnn.com/assets/images/2018/07/cat_eating_fancy_ice_cream.jpg.838x0_q80.jpg);
+
+.clip1 {
+	clip-path: $url_clip1;
+}
+
+.clip2 {
+  clip-path: $url_clip2;
+}
+
+.clip3 {
+  clip-path: $url_clip3;
+}
+
+
 
 #sp {
   background: $url_sp no-repeat center;
