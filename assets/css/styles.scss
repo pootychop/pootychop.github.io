@@ -1,13 +1,15 @@
 ---
 ---
+@import "previews";
+
 //colors
 $white_90: rgba(255,255,255,0.9);
 $black: #000;
-$color_pastel_green_approx: #76e598;
+$pastel-green: #76e598;
 $white: #fff;
 $pink: pink;
 $color_tuatara_85_approx: rgba(52, 52, 52, 0.85);
-$color_salem_approx: #047951;
+$dk-green: #047951;
 
 //fonts
 $font_0: Montserrat;
@@ -16,7 +18,7 @@ $font_2: Flamenco;
 $font_3: cursive;
 
 //urls
-$url_0: url(../img/blobby1-test.svg);
+$url_pink-blob: url(../img/blobby-pink.svg);
 $url_1: url(#clip1-a);
 $url_2: url(#clip2-a);
 $url_3: url(../img/puppy.jpg);
@@ -87,7 +89,7 @@ p {
 a {
   @extend %extend_1;
   &:hover {
-    color: $color_pastel_green_approx;
+    color: $pastel-green;
   }
 }
 svg {
@@ -98,7 +100,7 @@ img {
 }
 header {
   padding-top: 16vh;
-  background: $url_0 no-repeat top 90% left -60%;
+  background: $url_pink-blob no-repeat top 90% left -60%;
   background-size: 80%;
 }
 .container {
@@ -176,10 +178,10 @@ header {
   //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
   transition: border 250ms ease-in-out;
   &:hover {
-    border: 2px solid $color_pastel_green_approx;
+    border: 2px solid $pastel-green;
   }
   &:focus {
-    border: 2px solid $color_pastel_green_approx;
+    border: 2px solid $pastel-green;
   }
 }
 .scale-anm {
@@ -247,16 +249,16 @@ header {
       //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
       transition: fill 250ms ease-in-out;
       &:hover {
-        fill: $color_salem_approx;
+        fill: $dk-green;
       }
     }
   }
   a:hover {
-    color: $color_salem_approx;
+    color: $dk-green;
   }
 }
 #contact {
-  background-color: $color_pastel_green_approx;
+  background-color: $pastel-green;
 }
 @media only screen and(min-width: 560px) {
   .forth, .third, .half, .two-thirds {
