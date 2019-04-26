@@ -35,8 +35,11 @@ $url_5: url(https://media.mnn.com/assets/images/2018/07/cat_eating_fancy_ice_cre
  .PageNavigation {
   font-size: 14px;
   display: block;
-  width: auto;
-  overflow: hidden;
+  width: 92vw;
+  overflow: auto;
+  position: fixed;
+  bottom: 0;
+  background-color: $white_90;
 }
 
 .PageNavigation a {
