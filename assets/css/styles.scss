@@ -120,26 +120,20 @@ header {
   align-items: stretch;
   line-height: 0;
 }
-.forth {
+.port-images {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.port-images img {
+  margin: 3vw;
+}
+
+.forth, .three-forth, .third, .two-thirds, .half, .full  {
   margin: 0;
   width: 92vw;
 }
-.third {
-  margin: 0;
-  width: 92vw;
-}
-.two-thirds {
-  margin: 0;
-  width: 92vw;
-}
-.half {
-  margin: 0;
-  width: 92vw;
-}
-.full {
-  margin: 0;
-  width: 92vw;
-}
+
 .item {
   text-align: center;
   align-items: center;
@@ -309,6 +303,10 @@ header {
   .forth {
     width: calc(92vw / 4);
     max-width: calc(402px - 2vw);
+  }
+  .three-forth {
+    width: calc(92vw / 4 * 3);
+    width: calc(1206px-4vw);
   }
   .half {
     max-width: calc(804px - 4vw);

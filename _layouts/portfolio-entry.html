@@ -21,8 +21,6 @@
 
   <header id="project-header">
     <div class="container">
-      <h2>{{ page.title }}</h2>
-      <p>{{ page.categories}}</p>
     </div>
   </header>
 
@@ -30,14 +28,13 @@
   <section class="container">
 
     <div class="half">
-      <h3>The Prompt:</h3>
-      <p>{{page.prompt}}</p>
+      <h2>{{ page.title }}</h2>
+      <p>{{ page.categories}}</p>
     </div>
     <div class="half">
-      <h3>The Work:</h3>
-      <p>{{page.solution}}</p>
+      <p>{{content}}</p>
     </div>
-    <div>
+    <div class="port-images">
       <img src=" /assets/img/{{ page.image1 }} "/>
       <img src=" /assets/img/{{ page.image2 }} "/>
       <img src=" /assets/img/{{ page.image3 }} "/>
