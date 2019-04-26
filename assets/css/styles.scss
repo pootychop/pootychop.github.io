@@ -101,9 +101,15 @@ img {
 }
 header {
   padding-top: 16vh;
+}
+#home-header {
   background: $url_pink-blob no-repeat top 90% left -60%;
   background-size: 80%;
 }
+#project-header {
+  background-color: $pink;
+}
+
 .container {
   display: flex;
   flex-flow: row wrap;

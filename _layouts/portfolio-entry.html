@@ -19,15 +19,25 @@
     {% endif %}
   </section>
 
+  <header id="project-header">
+    <div class="container">
+      <h2>{{ page.title }}</h2>
+      <p>{{ page.categories}}</p>
+    </div>
+  </header>
+
+
   <section class="container">
 
-    <div class="third">
-      <h2>{{ page.project_title }}</h2>
-
-      {{content}}
-
+    <div class="half">
+      <h3>The Prompt:</h3>
+      <p>{{page.prompt}}</p>
     </div>
-    <div class="two-thirds">
+    <div class="half">
+      <h3>The Work:</h3>
+      <p>{{page.solution}}</p>
+    </div>
+    <div>
       <img src=" /assets/img/{{ page.image1 }} "/>
       <img src=" /assets/img/{{ page.image2 }} "/>
       <img src=" /assets/img/{{ page.image3 }} "/>
