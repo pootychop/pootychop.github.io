@@ -22,6 +22,16 @@ title: Home
         <button class="btn fil-cat" data-rel="illustration">Illustration</button>
         <button class="btn fil-cat" data-rel="branding">Branding</button>
       </div>
+
+<div class="container">
+      <ul>
+        {% for post in site.posts %}
+        <li class="item scale-anm clip2 forth all">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+</div>
 <!-- portfolio -->
       <div class="container" id="portfolio">
         <div class="item scale-anm clip2 forth all print illustration" id="sp">
@@ -89,6 +99,11 @@ title: Home
           </a>
       </div>
     </section>
+
+<!-- services -->
+  <section id="services">
+    
+  </section>
 <!-- about -->
     <section id="about">
       <div class="container">

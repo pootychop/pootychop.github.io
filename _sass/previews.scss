@@ -17,7 +17,20 @@ $url_5: url(https://media.mnn.com/assets/images/2018/07/cat_eating_fancy_ice_cre
   clip-path: $url_clip3;
 }
 
+.port-images {
+  max-width: 820px;
+  margin: 0 auto;
+}
 
+.port-images img {
+  margin: 3vw 0;
+}
+
+#project-header {
+  background-color: $pink;
+  background-size: cover;
+  background-position: center;
+}
 
 #sp {
   background: $url_sp no-repeat center;

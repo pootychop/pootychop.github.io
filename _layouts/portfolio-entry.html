@@ -19,18 +19,14 @@
     {% endif %}
   </section>
 
-  <header id="project-header">
-    <div class="container">
+  <header id="project-header" style="background-image: url(/assets/img/{{ page.header }});">
+    <div class="third">
+      <h2>{{ page.title }}</h2>
+     <h5>{{page.categories | capitalize | join: ', '}}</h5>
     </div>
   </header>
 
-
   <section class="container">
-
-    <div class="half">
-      <h2>{{ page.title }}</h2>
-      <p>{{ page.categories}}</p>
-    </div>
     <div class="half">
       <p>{{content}}</p>
     </div>
