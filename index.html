@@ -23,82 +23,13 @@ title: Home
         <button class="btn fil-cat" data-rel="branding">Branding</button>
       </div>
 
-<div class="container">
-      <ul>
+<div class="container" id="portfolio">
         {% for post in site.posts %}
-        <li class="item scale-anm clip2 forth all">
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
+        <div class="item scale-anm forth all {{post.categories | sort | join: " "}}" style="background-image: url(/assets/img/{{ post.image1 }});">
+          <a href="{{ post.url }}" class="item-content">{{ post.title }}</a>
+        </div>
         {% endfor %}
-      </ul>
 </div>
-<!-- portfolio -->
-      <div class="container" id="portfolio">
-        <div class="item scale-anm clip2 forth all print illustration" id="sp">
-          <a href="/sexy-pizza/"class="item-content">
-            <div>
-              <h3>Sexy Pizza</h3>
-              <p>Read More</p>
-            </div>
-          </a>
-        </div>
-        <div class="item scale-anm print all clip2 forth" id="bird">
-          <a href="#" class="item-content">
-            <div>
-              <h3>Puppy Print Project</h3>
-              <p>Read More</p>
-            </div>
-          </a>
-        </div>
-        <div class="item scale-anm illustration all clip1 forth" id="cat">
-          <a href="#" class="item-content">
-            <div>
-              <h3>Puppy Illustration Project</h3>
-              <p>Read More</p>
-            </div>
-          </a>
-        </div>
-        <div class="item scale-anm branding all clip2 forth">
-          <a href="#" class="item-content">
-            <div>
-              <h3>Puppy Branding Project</h3>
-              <p>Read More</p>
-            </div>
-          </a>
-        </div>
-        <div class="item scale-anm web all clip2 forth" id="puppy">
-          <a class="item-content" href="#">
-            <div>
-              <h3>Puppy Web Project</h3>
-              <p>Read More</p>
-            </div>
-          </a>
-        </div>
-        <div class="item scale-anm print all clip1 forth" id="bird">
-          <a class="item-content">
-            <div>
-              <h3>Puppy Print Project</h3>
-              <p>Read More</p>
-            </div>
-          </a>
-        </div>
-        <div class="item scale-anm illustration all clip2 forth" id="cat">
-          <a class="item-content">
-            <div>
-              <h3>Puppy Illustration Project</h3>
-              <p>Read More</p>
-            </div>
-          </a>
-        </div>
-        <div class="item scale-anm branding all clip1 forth">
-          <a class="item-content">
-            <div>
-              <h3>Puppy Branding Project</h3>
-              <p>Read More</p>
-            </div>
-          </a>
-      </div>
-    </section>
 
 <!-- services -->
   <section id="services">

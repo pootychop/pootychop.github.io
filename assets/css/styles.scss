@@ -7,7 +7,8 @@ $white_90: rgba(255,255,255,0.9);
 $black: #000;
 $pastel-green: #76e598;
 $white: #fff;
-$pink: pink;
+$black: #000;
+$pink: #457890;
 $color_tuatara_85_approx: rgba(52, 52, 52, 0.85);
 $dk-green: #047951;
 
@@ -60,6 +61,8 @@ h1 {
   @extend %extend_1;
   font-family: $font_2, $font_3;
   font-size: 6em;
+  line-height: 0.8em;
+    margin-bottom: 0.2em;
   //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
   text-shadow: -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black;
 }
@@ -106,9 +109,7 @@ header {
   background: $url_pink-blob no-repeat top 90% left -60%;
   background-size: 80%;
 }
-#project-header {
-  background-color: $pink;
-}
+
 
 .container {
   display: flex;
