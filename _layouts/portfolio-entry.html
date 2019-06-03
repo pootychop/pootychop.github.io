@@ -10,7 +10,7 @@
 
   {% include nav.html %}
 
-  <section class="container PageNavigation">
+  <section class="PageNavigation">
     {% if page.previous.url %}
     <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
     {% endif %}
@@ -19,16 +19,16 @@
     {% endif %}
   </section>
 
-<!-- 
+
   <header id="project-header" style="background-image: url(/assets/img/{{ page.header }});">
-  </header> -->
+  </header>
 
   <section class="container">
     <div class="half">
       <h1>{{ page.title }}</h1>
       <p>{{content}}</p>
     </div>
-    
+
     <div class="port-images">
       <img src=" /assets/img/{{ page.image1 }} "/>
       <img src=" /assets/img/{{ page.image2 }} "/>
