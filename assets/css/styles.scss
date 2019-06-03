@@ -61,18 +61,20 @@ nav {
   background-color: $white_90;
 }
 
-#home-header h1 {
-
-}
 h1 {
-  @extend %extend_1;
   font-family: $font_2, $font_3;
+  font-size: 3.2em;
+  line-height: 1em;
+  margin-bottom: 0.5em;
+}
+
+#home-header h1 {
   font-size: 6em;
   line-height: 0.8em;
-    margin-bottom: 0.2em;
-  //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  margin-bottom: 0.2em;
   text-shadow: -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black;
 }
+
 h2 {
   @extend %extend_1;
   font-size: 1.6em;
@@ -122,7 +124,7 @@ header {
   display: flex;
   flex-flow: row wrap;
   margin: 0 auto;
-  padding: 4vw;
+  padding: 60px 4vw;
   width: 100vw;
   max-width: 1608px;
   align-items: stretch;
@@ -133,6 +135,10 @@ header {
   margin: 0;
   width: 92vw;
 }
+.half {
+  margin: 0 auto;
+}
+
 .item {
   &.forth {
     height: 92vw;
@@ -240,6 +246,9 @@ header {
 
 @media only screen and(min-width: 740px) {
   h1 {
+  font-size: 4.2em;
+}
+  #home-header h1 {
     font-size: 10em;
   }
   h2 {
