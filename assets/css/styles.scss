@@ -9,7 +9,7 @@ $pastel-green: #76e598;
 $white: #fff;
 $black: #000;
 $pink: #457890;
-$color_tuatara_85_approx: rgba(52, 52, 52, 0.85);
+$dk-gray-trans: rgba(52, 52, 52, 0.85);
 $dk-green: #047951;
 
 //fonts
@@ -59,6 +59,10 @@ nav {
   top: 0;
   right: 0;
   background-color: $white_90;
+}
+
+#home-header h1 {
+
 }
 h1 {
   @extend %extend_1;
@@ -129,11 +133,7 @@ header {
   margin: 0;
   width: 92vw;
 }
-
 .item {
-  text-align: center;
-  align-items: center;
-  background-color: $pink;
   &.forth {
     height: 92vw;
   }
@@ -144,6 +144,7 @@ header {
     height: 92vw;
   }
 }
+
 .blob {
   position: absolute;
   z-index: -10;
@@ -179,28 +180,6 @@ header {
   }
   &:focus {
     border: 2px solid $pastel-green;
-  }
-}
-.scale-anm {
-  //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
-  transform: scale(1);
-}
-.item-content {
-  padding: 20%;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  text-align: center;
-  color: $white;
-  opacity: 0;
-  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-  transition: opacity 450ms ease-in-out, transform 200ms ease;
-  * {
-    width: 100%;
-  }
-  &:hover {
-    opacity: 1;
-    background-color: $color_tuatara_85_approx;
   }
 }
 
