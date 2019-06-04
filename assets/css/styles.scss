@@ -133,10 +133,8 @@ header {
 
 .forth, .three-forth, .third, .two-thirds, .half, .full  {
   margin: 0 auto;
-  width: 92vw;
-}
-.half {
-  margin: 0 auto;
+  padding: 1vw;
+  width: 90vw;
 }
 
 .item {
@@ -191,12 +189,8 @@ header {
 
 #about {
   background: $url_6 no-repeat right -10% bottom -10%;
-  .container {
-    padding-bottom: 0;
-  }
 }
 #self {
-  width: 100%;
 }
 .contact-info {
   text-align: center;
