@@ -132,9 +132,12 @@ header {
 }
 
 .forth, .three-forth, .third, .two-thirds, .half, .full  {
-  margin: 0 auto;
   padding: 1vw;
   width: 90vw;
+}
+
+.center {
+  margin: 0 auto;
 }
 
 .item {
