@@ -24,7 +24,7 @@ title: Home
       </div>
 
 <div class="container" id="portfolio">
-        {% for post in site.posts %}
+        {% for post in site.posts reversed %}
         <div class="item scale-anm forth all {{post.categories | sort | join: " "}}" style="background-image: url(/assets/img/{{ post.header }});">
           <a href="{{ post.url }}" class="item-content">
           <h3>{{ post.title }}</h3>
