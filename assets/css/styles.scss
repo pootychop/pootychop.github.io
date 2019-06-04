@@ -127,17 +127,19 @@ header {
   padding: 60px 4vw;
   width: 100vw;
   max-width: 1608px;
-  align-items: stretch;
+  align-items: center;
   line-height: 0;
 }
 
 .forth, .three-forth, .third, .two-thirds, .half, .full  {
-  padding: 1vw;
-  width: 90vw;
+  width: 92vw;
 }
 
 .center {
   margin: 0 auto;
+}
+div.spacious {
+  padding: 4vw;
 }
 
 .item {

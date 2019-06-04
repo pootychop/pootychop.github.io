@@ -27,7 +27,7 @@ title: Home
         {% for post in site.posts reversed %}
         <div class="item scale-anm forth all {{post.categories | sort | join: " "}}" style="background-image: url(/assets/img/{{ post.header }});">
           <a href="{{ post.url }}" class="item-content">
-          <h3>{{ post.title }}</h3>
+          <h3>{{ post.project_title }}</h3>
           </a>
         </div>
         {% endfor %}
