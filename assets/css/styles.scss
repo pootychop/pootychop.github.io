@@ -113,13 +113,12 @@ img {
 }
 header {
   padding-top: 16vh;
-  height: 98vh;
 }
 #home-header {
     background: url(../img/blobby-pink.svg) no-repeat top -10vh left -20vw;
     background-size: 100vw;
+    height: 98vh;
 }
-
 
 .container {
   display: flex;
@@ -234,7 +233,7 @@ div.spacious {
   }
   .item {
     background-size: 100vw !important;
-    
+
     &.forth {
       height: calc(92vw / 2);
     }
