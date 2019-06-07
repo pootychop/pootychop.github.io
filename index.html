@@ -14,29 +14,28 @@ title: Julibee
 {% include clip-paths.html %}
 
 <!-- filter buttons -->
-    <section id="portfolio-block">
-      <div class="container" id="filter">
-        <button class="btn fil-cat" href="" data-rel="all">All</button>
-        <button class="btn fil-cat" data-rel="web">Websites</button>
-        <button class="btn fil-cat" data-rel="print">Print</button>
-        <button class="btn fil-cat" data-rel="illustration">Illustration</button>
-        <button class="btn fil-cat" data-rel="branding">Branding</button>
-      </div>
+<section id="portfolio-block">
+  <div class="container" id="filter">
+    <button class="btn fil-cat" href="" data-rel="all">All</button>
+    <button class="btn fil-cat" data-rel="web">Websites</button>
+    <button class="btn fil-cat" data-rel="print">Print</button>
+    <button class="btn fil-cat" data-rel="illustration">Illustration</button>
+    <button class="btn fil-cat" data-rel="branding">Branding</button>
+  </div>
 
-<div class="container" id="portfolio">
-        {% for post in site.posts reversed %}
-        <div class="item scale-anm forth all {{post.categories | sort | join: " "}}" style="background-image: url(/assets/img/{{ post.header }});">
-          <a href="{{ post.url }}" class="item-content">
-          <h3>{{ post.project_title }}</h3>
-          </a>
-        </div>
-        {% endfor %}
-</div>
+  <div class="container" id="portfolio">
+    {% for post in site.posts reversed %}
+    <div class="item scale-anm forth all {{post.categories | sort | join: " "}}" style="background-image: url(/assets/img/{{ post.header }});">
+      <a href="{{ post.url }}" class="item-content">
+        <h3>{{ post.project_title }}</h3>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
 
 <!-- services -->
-  <section id="services">
-    
-  </section>
+
 <!-- about -->
     <section id="about">
       <div class="container">

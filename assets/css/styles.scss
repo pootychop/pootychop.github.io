@@ -113,10 +113,11 @@ img {
 }
 header {
   padding-top: 16vh;
+  height: 98vh;
 }
 #home-header {
-  background: $url_pink-blob no-repeat top 90% left -60%;
-  background-size: 80%;
+    background: url(../img/blobby-pink.svg) no-repeat top -10vh left -20vw;
+    background-size: 100%;
 }
 
 
@@ -170,6 +171,7 @@ div.spacious {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: nowrap;
+  padding-bottom: 0;
 }
 .btn {
   background: $white;
@@ -221,6 +223,11 @@ div.spacious {
   background-color: $pastel-green;
 }
 @media only screen and(min-width: 560px) {
+
+  #home-header {
+    background-position: top -40vw left -20vw;
+}
+
   .forth, .third, .half, .two-thirds {
     width: calc(92vw / 2);
   }
