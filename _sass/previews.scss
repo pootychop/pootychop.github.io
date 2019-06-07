@@ -11,6 +11,8 @@ $url_clip2: url(#clip2-a);
 
 .item {
   background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 200vw;
   text-align: center;
   align-items: center;
   background-color: $dk-gray-trans;

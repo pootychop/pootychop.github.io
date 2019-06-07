@@ -233,6 +233,8 @@ div.spacious {
     width: calc(92vw / 2);
   }
   .item {
+    background-size: 100vw !important;
+    
     &.forth {
       height: calc(92vw / 2);
     }
