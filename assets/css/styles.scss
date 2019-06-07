@@ -117,7 +117,7 @@ header {
 }
 #home-header {
     background: url(../img/blobby-pink.svg) no-repeat top -10vh left -20vw;
-    background-size: 100%;
+    background-size: 100vw;
 }
 
 
@@ -226,6 +226,7 @@ div.spacious {
 
   #home-header {
     background-position: top -40vw left -20vw;
+    background-size: 90vw;
 }
 
   .forth, .third, .half, .two-thirds {
