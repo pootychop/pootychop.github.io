@@ -1,12 +1,10 @@
-$url_clip1: url(#clip1-a);
-$url_clip2: url(#clip2-a);
 
 .clip1 {
-	clip-path: $url_clip1;
+  clip-path: url(#clip1-a);
 }
 
 .clip2 {
-  clip-path: $url_clip2;
+  clip-path: url(#clip2-a);
 }
 
 .item {
