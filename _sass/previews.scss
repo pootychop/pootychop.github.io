@@ -1,9 +1,14 @@
 
 .clip1 {
+  -webkit-clip-path: url(#clip1-a);
   clip-path: url(#clip1-a);
+  &:hover {
+    clip-path: url(#clip1-a-animating);
+  }
 }
 
 .clip2 {
+  -webkit-clip-path: url(#clip2-a);
   clip-path: url(#clip2-a);
 }
 
