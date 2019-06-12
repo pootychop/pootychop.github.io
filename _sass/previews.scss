@@ -1,16 +1,25 @@
 
 .clip1 {
-  -webkit-clip-path: url(#clip1-a);
-  clip-path: url(#clip1-a);
-  &:hover {
-    clip-path: url(#clip1-a-animating);
-  }
+  -webkit-clip-path: url(#clip1);
+  clip-path: url(#clip1);
+}
+.clip2 {
+  -webkit-clip-path: url(#clip2);
+  clip-path: url(#clip2);
+}
+.clip3 {
+  -webkit-clip-path: url(#clip3);
+  clip-path: url(#clip3);
+}
+.clip4 {
+  -webkit-clip-path: url(#clip4);
+  clip-path: url(#clip4);
+}
+.clip5 {
+  -webkit-clip-path: url(#clip5);
+  clip-path: url(#clip5);
 }
 
-.clip2 {
-  -webkit-clip-path: url(#clip2-a);
-  clip-path: url(#clip2-a);
-}
 
 .item {
   background-position: center center;
