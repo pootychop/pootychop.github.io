@@ -44,22 +44,33 @@ section {
 button {
   font-family: $font_0, $font_1;
 }
- #home-icon {
-  margin-right: 3%;
- }
 
-#home-icon img{
-  width: 3%;
-}
+
 nav {
+   max-height: 60px;
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   z-index: 30;
   position: fixed;
-  padding: 2vw;
+  padding: 1%;
   top: 0;
   right: 0;
   background-color: $white_90;
 }
+nav a {
+
+  justify-content: center;
+  margin: 2%;
+
+}
+#home-icon {
+  flex-basis: 10%;
+  img {
+    max-width: 100px;
+  }
+}
+
 
 h1 {
   font-family: $font_2, $font_3;
@@ -143,11 +154,13 @@ flex-basis: 100%;
 .center {
   margin: 0 auto;
 }
-
 div.spacious {
   padding: 4vw;
 }
 
+.item {
+  flex-grow: 1;
+}
 
 .blob {
   position: absolute;
