@@ -18,7 +18,13 @@
   <header id="project-header" style="background-image: url(/assets/img/{{ page.header }});">
   </header>
 
-  {{content}}
+ <section class="project-section">
+  <div class="container">
+    <div class="half center">
+      <h4 class="categories">{{page.categories | join: " • "}}</h4>
+      <h1> {{page.project_title}} </h1>
+
+      {{content}}
 
   {% include contact-footer.html %}
 

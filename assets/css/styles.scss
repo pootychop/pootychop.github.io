@@ -98,7 +98,9 @@ h3 {
   padding-bottom: 0.6em;
 }
 h4 {
-  @extend %extend_1;
+  line-height: 1.2em;
+  padding-bottom: 1.2em;
+  color: $dk-gray-trans;
 }
 h5 {
   @extend %extend_1;
