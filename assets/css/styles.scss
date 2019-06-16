@@ -79,12 +79,18 @@ h1 {
   margin-bottom: 0.5em;
 }
 
-#home-header h1 {
-  font-size: 6em;
-  line-height: 0.8em;
-  margin-bottom: 0.2em;
-  text-shadow: -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black;
+#home-header {
+    background: url(../img/blobby-pink.svg) no-repeat top -10vh left -20vw;
+    background-size: 100vw;
+    height: 98vh;
+    & h1 {
+      font-size: 6em;
+      line-height: 0.8em;
+      margin-bottom: 0.2em;
+      text-shadow: -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black;
+    }
 }
+
 
 h2 {
   @extend %extend_1;
@@ -127,11 +133,7 @@ img {
 header {
   padding-top: 16vh;
 }
-#home-header {
-    background: url(../img/blobby-pink.svg) no-repeat top -10vh left -20vw;
-    background-size: 100vw;
-    height: 98vh;
-}
+
 
 .container {
   display: flex;
